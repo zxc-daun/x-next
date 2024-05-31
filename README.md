@@ -9,7 +9,7 @@ This is a starter project for React that uses Next.js.
 * SASS/SCSS wth Bootstrap 4 and Reactstrap with Bootstrap components for React
 * Comes with Ionicons icon font and shows how to bundle other CSS and font files
 
-You can see a live demo at **https://nextjs-starter.now.sh**
+You can see a live demo at **https://imdb.100jsprojects.com/**
 
 ## About 
 
@@ -42,12 +42,6 @@ If you wanted to run this site in production, you should install modules then bu
 You should run `npm run build` again any time you make changes to the site.
 
 Note: If you are already running a webserver on port 80 (e.g. Macs usually have the Apache webserver running on port 80) you can still start the example in production mode by passing a different port as an Environment Variable when starting (e.g. `PORT=3000 npm start`).
-
-## Configuring
-API_KEY can be easilly gained from https://www.themoviedb.org/
-If you configure a .env file (just copy [.env.example](https://github.com/iaincollins/nextjs-starter/blob/master/.env.example) over to '.env' and fill in the options) you can configure a range of options.
-
-See the [AUTHENTICATION.md](https://github.com/iaincollins/nextjs-starter/blob/master/AUTHENTICATION.md) for how to set up oAuth if you want to do that. It suggested you start with Twitter as it's the easiest to get working.
 
 ----
 
