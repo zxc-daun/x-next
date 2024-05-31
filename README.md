@@ -2,7 +2,6 @@
 
 This is a starter project for React that uses Next.js.
 
-* Authentication via Email, Facebook, Twitter and Google+
 * Uses Express combined with Passport JS for authentication and route handling
 * Account management - Update details, link/unlink accounts, delete account
 * Session support with secure HTTP Only cookies and CSRF Tokens
@@ -25,7 +24,7 @@ This project exists to make it easier to get started a creating production app i
 
 To get started, just clone the repository and run `npm install && npm run dev`:
 
-    git clone https://github.com/iaincollins/nextjs-starter.git
+    git clone https://github.com/zxc-daun/x-next
     npm install
     npm run dev
 
