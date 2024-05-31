@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter Project
 
-## Getting Started
+This is a starter project for React that uses Next.js.
 
-First, run the development server:
+* Authentication via Email, Facebook, Twitter and Google+
+* Uses Express combined with Passport JS for authentication and route handling
+* Account management - Update details, link/unlink accounts, delete account
+* Session support with secure HTTP Only cookies and CSRF Tokens
+* SASS/SCSS wth Bootstrap 4 and Reactstrap with Bootstrap components for React
+* Comes with Ionicons icon font and shows how to bundle other CSS and font files
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You can see a live demo at **https://nextjs-starter.now.sh**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About 
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Next.js is a framework that makes it easy to create 'universal' React apps - React apps that do both client and server side rendering.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+With Next.js, React pages are automatically rendered on both client and server side, without the hassle of setting up dependancies like webpack or babel and with automatic routing and without the constraints of projects like Create React App.
 
-## Learn More
+This is a starter project that provides an example of how to use Next.js with Express, SASS/SCSS, Bootstrap, Reactstrap (Boostrap 4 for React), the Ionicons icon set, examples of how to include data from remote REST APIs and incorporate an authentication system that supports both oAuth and Email using Passport (a popular authentication framework for Node.js).
 
-To learn more about Next.js, take a look at the following resources:
+This project exists to make it easier to get started a creating production app in React. You are invited to use it as a reference or to copy it and use it as a base for your own projects. Contributions to improve this project are welcome.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running locally in development mode
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To get started, just clone the repository and run `npm install && npm run dev`:
 
-## Deploy on Vercel
+    git clone https://github.com/iaincollins/nextjs-starter.git
+    npm install
+    npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Note: If you are running on Windows run install --noptional flag (i.e. `npm install --no-optional`) which will skip installing fsevents.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Building and deploying in production
+
+If you wanted to run this site in production, you should install modules then build the site with `npm run build` and run it with `npm start`:
+
+    npm install
+    npm run build
+    npm start
+
+You should run `npm run build` again any time you make changes to the site.
+
+Note: If you are already running a webserver on port 80 (e.g. Macs usually have the Apache webserver running on port 80) you can still start the example in production mode by passing a different port as an Environment Variable when starting (e.g. `PORT=3000 npm start`).
+
+## Configuring
+API_KEY can be easilly gained from https://www.themoviedb.org/
+If you configure a .env file (just copy [.env.example](https://github.com/iaincollins/nextjs-starter/blob/master/.env.example) over to '.env' and fill in the options) you can configure a range of options.
+
+See the [AUTHENTICATION.md](https://github.com/iaincollins/nextjs-starter/blob/master/AUTHENTICATION.md) for how to set up oAuth if you want to do that. It suggested you start with Twitter as it's the easiest to get working.
+
+----
+
+## Further reading
+
+
+### Secrets for Environment Variables
+
+Once you are comfortable using `.env` files for configuration and running and deploying your app, take a look at `now secrets` to set options in the cloud so you don't have to set them each time you deploy.
+
+### GitHub integration
+
+You can integrate `now` with a GitHub account to trigger automated deployments anytime you push to GitHub. This works great if you have secrets set up!
+
+### Alternate hosting options
+
+You can host your Next.js site with any hosting provider. Although it works great on Now, it also works great with other providers like Heroku, Amazon Web Service, Google Cloud Platform, Microsoft Azure, DigitalOcean and others.
